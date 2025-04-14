@@ -1,2 +1,6 @@
-# fitness_app
-This is a fitness app with end to end rag application
+### Development stack
+- Development python package managment is pipenv
+` 
+bash
+pip install pipenv
+`

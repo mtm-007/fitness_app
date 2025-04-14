@@ -13,6 +13,8 @@ flask = "*"
 tqdm = "*"
 notebook = "==7.1.2"
 ipywidgets = "*"
+python-dotenv = "*"
+groq = "*"
 
 [requires]
 python_version = "3.12"
