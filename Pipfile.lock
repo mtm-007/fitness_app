@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "b8522e8e3a100994eb4fca00b2606b33c20f5ac461abf3fe25f149975a746b8f"
+            "sha256": "395986c359dea7573e049bee4c037e7b6f49462630d0f3013200033c7cf3f166"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -1033,6 +1033,13 @@
             "markers": "python_version >= '3.6'",
             "version": "==1.9.0"
         },
+        "dotenv": {
+            "hashes": [
+                "sha256:29cf74a087b31dafdb5a446b6d7e11cbce8ed2741540e2339c69fbef92c94ce9"
+            ],
+            "index": "pypi",
+            "version": "==0.9.9"
+        },
         "executing": {
             "hashes": [
                 "sha256:11387150cad388d62750327a53d3339fad4888b39a6fe233c3afbb54ecffd3aa",
@@ -1239,12 +1246,12 @@
         },
         "jupyterlab": {
             "hashes": [
-                "sha256:61d33991fbb352cc7caac08bd0c34577fea86d8d5d9772600d9d5a6bcbc882c0",
-                "sha256:f1767d5f0104e40f3b4a63bf6892bbef8e4704dcabf0c78408a3bdc411792f04"
+                "sha256:3384aded8680e7ce504fd63b8bb89a39df21c9c7694d9e7dc4a68742cdb30f9b",
+                "sha256:c3baf3a2f91f89d110ed5786cd18672b9a357129d4e389d2a0dead15e11a4d2c"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.9'",
-            "version": "==4.4.0"
+            "markers": "python_version >= '3.8'",
+            "version": "==4.1.8"
         },
         "jupyterlab-pygments": {
             "hashes": [
@@ -1384,6 +1391,15 @@
             ],
             "markers": "python_version >= '3.5'",
             "version": "==1.6.0"
+        },
+        "notebook": {
+            "hashes": [
+                "sha256:efc2c80043909e0faa17fce9e9b37c059c03af0ec99a4d4db84cb21d9d2e936a",
+                "sha256:fc6c24b9aef18d0cd57157c9c47e95833b9b0bdc599652639acf0bdb61dc7d5f"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.8'",
+            "version": "==7.1.2"
         },
         "notebook-shim": {
             "hashes": [

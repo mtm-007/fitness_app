@@ -9,13 +9,13 @@ scikit-learn = "*"
 pandas = "*"
 flask = "*"
 
-
 [dev-packages]
 tqdm = "*"
 ipywidgets = "*"
 groq = "*"
 python-dotenv = "*"
 jupyterlab = "*"
+notebook = "==7.1.2"
 
 [requires]
 python_version = "3.12"
