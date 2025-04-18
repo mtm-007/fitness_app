@@ -16,6 +16,7 @@ groq = "*"
 python-dotenv = "*"
 jupyterlab = "*"
 notebook = "==7.1.2"
+hyperopt = "*"
 
 [requires]
 python_version = "3.12"

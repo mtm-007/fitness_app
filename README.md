@@ -28,9 +28,15 @@ pipenv run jupyter lab
 
 ## Ingestion
 
+## Evaluation
+For evaultion sytem, check the code in [notebooks/indexing_data_and_Evaluation.ipynb](notebooks/indexing_data_and_Evaluation.ipynb) notebook.
+
 ## Retrieval
 
-## Evaluation
+Minsearch is used as a basic approach withput any boosting, gave the following metrics  
+
+* hit_rate: 93.4% 
+* MRR: 79.9% 
 
 ## RAG Flow
 
