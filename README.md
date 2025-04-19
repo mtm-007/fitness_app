@@ -38,6 +38,11 @@ Minsearch is used as a basic approach withput any boosting, gave the following m
 * hit_rate: 93.4% 
 * MRR: 79.9% 
 
+The improved search(with boosting)
+
+* hit_rate: 94.61% 
+* MRR: 86.52%
+
 ## RAG Flow
 
 ## Monitoring
