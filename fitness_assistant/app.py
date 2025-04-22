@@ -16,9 +16,11 @@ def handle_question():
     conversation_id = str(uuid.uuid4())
 
     answer = rag(question)
+    
     result = {
         "conversation_id" : conversation_id,
-        "answer" : answer
+        "question" : question,
+        "answer" : answer,
         }
 
     return jsonify(result)

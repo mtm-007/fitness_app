@@ -3,7 +3,7 @@
 This is a Fitness assitant, a Rag implemented LLM Application
 
 
-## Running it
+## Installing dependecies
 
 `pipenv` is used for managing depedencies, and Python 3.12.  
 
@@ -13,13 +13,42 @@ Make sure you have pipenv installed:
 pip install pipenv
 ```
 
-## Installing dependecies
+### Installing dependecies
 
 ```bash
 pipenv install
 ```
 
-## Running Jupyter for dev experiments:
+### Running Flask application
+
+Running Flask application API
+```bash
+pipenv run python app.py
+```
+
+### Testing API
+```bash
+
+URL=http://127.0.0.1:5000
+QUESTION="Can you explain how to do a Glute Bridge, I am not sure about the movement."
+
+DATA='{
+    "question" : "'${QUESTION}'"
+    }'
+
+curl -X POST  \
+    -H "Content-Type: application/json" \
+    -d "${DATA}" \
+    ${URL}/question 
+
+```
+
+### Sending feedback
+
+```bash
+id="85a8e669-7e8f-4262-943f-f98c22b8521b"
+```
+## Misc
 
 ```bash
 pipenv run jupyter lab
