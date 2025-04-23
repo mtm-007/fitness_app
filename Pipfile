@@ -19,6 +19,7 @@ jupyterlab = "*"
 notebook = "==7.1.2"
 hyperopt = "*"
 requests = "*"
+rank-bm25 = "*"
 
 [requires]
 python_version = "3.12"

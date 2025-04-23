@@ -1,6 +1,7 @@
 import pandas as pd
 
-import minsearch
+#import minsearch
+import  minsearch_bm25 as minsearch
 
 
 def load_index(data_path='../data/data.csv'):
