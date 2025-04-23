@@ -18,6 +18,7 @@ python-dotenv = "*"
 jupyterlab = "*"
 notebook = "==7.1.2"
 hyperopt = "*"
+requests = "*"
 
 [requires]
 python_version = "3.12"

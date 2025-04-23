@@ -46,7 +46,17 @@ curl -X POST  \
 ### Sending feedback
 
 ```bash
-id="85a8e669-7e8f-4262-943f-f98c22b8521b"
+ID="fc81b276-d71d-40f5-9808-947787675b16"
+
+FEEDBACK_DATA='{
+    "conversation_id" : "'${ID}'",
+    "feedback" : 1
+}'
+
+curl -X POST  \
+    -H "Content-Type: application/json" \
+    -d "${FEEDBACK_DATA}" \
+    ${URL}/feedback 
 ```
 ## Misc
 

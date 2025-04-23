@@ -31,7 +31,7 @@ def handle_feedback():
     conversation_id = data["conversation_id"]
     feedback = data["feedback"]
 
-    if not conversation_id or feedback in [1, -1]:
+    if not conversation_id or feedback not in [1, -1]:
         return jsonify({"error" : "Invalid input"}), 400
     
     result = {"message" : f"feedback recieved for conversation {conversation_id}: {feedback}"}
