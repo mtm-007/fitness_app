@@ -9,6 +9,8 @@ scikit-learn = "*"
 pandas = "*"
 flask = "*"
 python-dotenv = "*"
+psycopg2-binary = "*"
+rank-bm25 = "*"
 
 [dev-packages]
 tqdm = "*"
