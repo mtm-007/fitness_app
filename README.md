@@ -46,7 +46,9 @@ curl -X POST  \
 ### Sending feedback
 
 ```bash
-ID="fc81b276-d71d-40f5-9808-947787675b16"
+ID="33277a06-a8d0-4c6e-acba-c6b247bb058d" 
+
+URL=http://127.0.0.1:5000
 
 FEEDBACK_DATA='{
     "conversation_id" : "'${ID}'",

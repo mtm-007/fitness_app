@@ -1,9 +1,9 @@
 import ingest
-
 import os
 import pandas as pd
 from openai import OpenAI
 from dotenv import load_dotenv
+from time import time
 
 load_dotenv()
 
@@ -65,8 +65,32 @@ def llm(prompt, model="gpt-4o-mini"):
 
 
 def rag(query, model="gpt-4o-mini",):
+
+    t0 = time()
+
     search_results = search(query)
     prompt = build_prompt(query, search_results)
     answer = llm(prompt, model=model)
-    return answer
+
+    t1 = time()
+
+    time_took = t1 - t0
+
+    answer_data = {
+        "answer" : answer,
+        "model_used" : model,
+        "response_time" : time_took,
+        "relevance" : "RELEVANT",
+        "relevance_explanation" : " ",
+        "prompt_tokens" : len(prompt.split()),
+        "completion_tokens" : len(answer.split()),
+        "total_tokens" : len(prompt.split()) + len(answer.split()),
+        "eval_prompt_tokens" : 0, 
+        "eval_completion_tokens" : 0, 
+        "eval_total_tokens" : 0,
+        "openai_cost" : 0
+    }
+
+
+    return answer_data
 
