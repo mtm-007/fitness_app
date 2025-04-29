@@ -7,8 +7,10 @@ RUN pip install pipenv
 COPY data/data.csv data/data.csv
 COPY ["Pipfile", "Pipfile.lock", "./"]
 
-RUN pipenv install --deploy -ignore-pipenv
+RUN pipenv install --deploy --ignore-pipenv
 
 COPY fitness_assistant .
 
-CMD ["python", "app.py"]
+EXPOSE 5000
+
+ENTRYPOINT ["gunicorn", "--bind 0.0.0.0:5000", "app:app"]

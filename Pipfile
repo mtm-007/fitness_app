@@ -12,6 +12,7 @@ python-dotenv = "*"
 psycopg2-binary = "*"
 rank-bm25 = "*"
 gunicorn = "*"
+requests = "*"
 
 [dev-packages]
 tqdm = "*"
@@ -21,7 +22,6 @@ python-dotenv = "*"
 jupyterlab = "*"
 notebook = "==7.1.2"
 hyperopt = "*"
-requests = "*"
 rank-bm25 = "*"
 
 [requires]
