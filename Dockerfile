@@ -1,16 +1,16 @@
 FROM python:3.12-slim
 
-WORKDIR /app
+# WORKDIR /app
 
-RUN pip install pipenv
+# RUN pip install pipenv
 
-COPY data/data.csv data/data.csv
-COPY ["Pipfile", "Pipfile.lock", "./"]
+# COPY data/data.csv data/data.csv
+# COPY ["Pipfile", "Pipfile.lock", "./"]
 
-RUN pipenv install --deploy --ignore-pipfile --system
+# RUN pipenv install --deploy --ignore-pipfile --system
 
-COPY fitness_assistant .
+# COPY fitness_assistant .
 
-EXPOSE 5000
+# EXPOSE 5000
 
-ENTRYPOINT ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
+# ENTRYPOINT ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]

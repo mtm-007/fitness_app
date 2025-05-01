@@ -11,7 +11,7 @@ from tqdm.auto import tqdm
 import minsearch
 
 
-load_dotenv()
+load_dotenv(dotenv_path=".envrc")
 
 
 client = OpenAI()

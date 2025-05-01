@@ -30,7 +30,9 @@ pipenv run python app.py
 ```bash
 
 URL=http://127.0.0.1:5000
-QUESTION="Can you explain how to do a Glute Bridge, I am not sure about the movement."
+
+#QUESTION="Can you explain how to do a Glute Bridge, I am not sure about the movement."
+question="Can you explain how to do a Glute Bridge, I am not sure about the movement."
 
 DATA='{
     "question" : "'${QUESTION}'"
@@ -46,7 +48,8 @@ curl -X POST  \
 ### Sending feedback
 
 ```bash
-ID="33277a06-a8d0-4c6e-acba-c6b247bb058d" 
+
+ID="b8db73d6-9f47-41d8-8f47-d5c719aee57b"
 
 URL=http://127.0.0.1:5000
 
