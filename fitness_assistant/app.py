@@ -24,14 +24,15 @@ def handle_question():
         "question" : question,
         "answer" : answer_data["answer"],
         }
-
-    return jsonify(result)
-
+    
     db.save_conversation(
         conversation_id=conversation_id,
         question=question,
         answer_data=answer_data,
     )
+
+    return jsonify(result)
+
 
 @app.route('/feedback', methods = ['POST'])
 def handle_feedback():

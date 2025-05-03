@@ -5,11 +5,11 @@ from openai import OpenAI
 from dotenv import load_dotenv
 from time import time
 
-load_dotenv(dotenv_path=".envrc")
+load_dotenv()
 
-api_key = os.getenv("OPENAI_API_KEY")
+#api_key = os.getenv("OPENAI_API_KEY")
 
-client = OpenAI(api_key=api_key)
+client = OpenAI()
 
 index = ingest.load_index()
 
