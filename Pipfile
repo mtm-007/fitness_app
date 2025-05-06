@@ -4,7 +4,6 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-openai = "*"
 scikit-learn = "*"
 pandas = "*"
 flask = "*"
@@ -13,6 +12,7 @@ psycopg2-binary = "*"
 rank-bm25 = "*"
 gunicorn = "*"
 requests = "*"
+openai = "*"
 
 [dev-packages]
 tqdm = "*"
@@ -20,7 +20,7 @@ ipywidgets = "*"
 groq = "*"
 python-dotenv = "*"
 jupyterlab = "*"
-notebook = "==7.1.2"
+notebook = "*"
 hyperopt = "*"
 rank-bm25 = "*"
 
